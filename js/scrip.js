@@ -1,24 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-  const accordions = document.querySelectorAll('.accordion');
 
-  accordions.forEach(item => {
-    const header = item.querySelector('.accordion-header');
-    const content = item.querySelector('.accordion-content');
-
-    header.addEventListener('click', () => {
-      // Alternar clase activa
-      item.classList.toggle('active');
-
-      // Abrir o cerrar acordeón con max-height
-      if(item.classList.contains('active')) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = "0";
-      }
-    });
-  });
-});
 
 document.addEventListener("DOMContentLoaded", function() {
   const slides = document.querySelectorAll(".slide");
@@ -57,3 +38,4 @@ btnTop.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
