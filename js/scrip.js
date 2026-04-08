@@ -1,4 +1,20 @@
 
+  const accordions = document.querySelectorAll(".accordion-header");
+
+  accordions.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      content.classList.toggle("active");
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
