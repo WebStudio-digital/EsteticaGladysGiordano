@@ -108,10 +108,6 @@ a {
     
 }
 
-
-
-
-
 .hero-content {
   background: rgba(255,255,255,0.3);
   padding: 10px;
@@ -590,6 +586,185 @@ footer {
     background: var(--color-rosa-viejo);
     transform: scale(1.1);
 }
+.caja-acordeon {
+    gap: 15px;
+
+border-radius: 20px;
+    color: #C6A75E;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 20pxpx;
+    align-items: center;
+
+
+}
+
+h5 {
+    text-decoration: underline;
+    font-size: 24px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Mostrar al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Header por encima de todo */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Nav normal (desktop) */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+
+/* NAV DESKTOP */
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color:var(--color-dorado);
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Mostrar en desktop con hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HAMBURGUESA */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 220px;
+    padding: 15px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  /* En mobile el dropdown se comporta como lista normal */
+  .dropdown-content {
+    position: static;
+    display: block;
+    box-shadow: none;
+  }
+}
+.dropbtn {
+  color: var(--color-dorado); 
+  text-decoration: none;
+}
 
 /* -------------------
    ANIMACIONES
@@ -644,6 +819,45 @@ footer {
   height: 50px;
   object-fit: contain;
 }
+}
+
+/* HERO */
+
+
+/* INTRO */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* CARDS */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f8f8;
+}
+
+.btn {
+  
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 @media (max-width: 768px) {
     .results .gallery {
@@ -787,4 +1001,245 @@ footer {
     line-height: 1.2;
     padding: 0 16px; /* para que no toque los bordes */
   }
+}
+/* HERO FACIAL */
+.hero-facial {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('../images/facial1.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.hero-masajes {
+    height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('../images/masaje4.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.hero-facial h2 {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-facial p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* CARDS (heredado del main styles.css, pero aseguramos consistencia) */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--color-blanco);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+/* HERO DEPILACION */
+.hero-depilacion {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('../images/depilacion5.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-depilacion h2 {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-depilacion p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* CARDS (heredado de styles.css) */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--color-blanco);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+/* HERO CORPORAL */
+.hero-corporales {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('../images/corporal3.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-corporales h2 {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-corporales p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* CARDS (heredado de styles.css) */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--color-blanco);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+/* HERO CONTACTO */
+.hero-contacto {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('../img/contacto-hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero-contacto h2 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-contacto p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* FORMULARIO */
+.contacto-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.contacto-form h3 {
+    text-align: center;
+    color: var(--color-dorado);
+    margin-bottom: 25px;
+}
+
+.contacto-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-rosa-claro);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    border-color: var(--color-dorado);
+}
+
+.contacto-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: var(--color-dorado);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto-form button:hover {
+    background: var(--color-rosa-viejo);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contacto-form {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+
+    .hero-contacto h2 {
+        font-size: 28px;
+    }
+
+    .hero-contacto p {
+        font-size: 16px;
+    }
 }

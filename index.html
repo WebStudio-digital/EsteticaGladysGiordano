@@ -1,167 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Centro de estética en Martínez. Tratamientos faciales, corporales y masajes con resultados visibles desde la primera sesión.">
-<title>Gladys Giordano Estética</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./CSS/studio.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Centro de estética en Martínez. Tratamientos faciales, corporales y masajes con resultados visibles desde la primera sesión.">
+  <title>Gladys Giordano Estética</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/studio.css">
 
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <h1> Estetica | Gladys Giordano</h1>
+  <!-- HEADER -->
+  <header class="header">
+  <h1> Estetica | Gladys Giordano</h1>
+
+  <!-- Botón hamburguesa -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
   <div class="container">
-    <nav>
-      <a href="#servicios">Servicios</a>
+    <nav id="nav-menu">
+
+      <!-- Dropdown Servicios -->
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn dropdown">HOME</a>
+        <div class="dropdown-content">
+          <a href="./PAGES/facial.html">Facial</a>
+          <a href="./PAGES/corporales.html">Corporales</a>
+          <a href="./PAGES/depilacion.html">Definitiva</a>
+          <a href="./PAGES/masajes.html">Masajes</a>
+        </div>
+      </div>
+
       <a href="#resultados">Resultados</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
+      <a href="./PAGES/contacto.html">Contacto</a>
+
     </nav>
-    
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  
-  <div class="hero-slider">
-    <div class="slide active">
-      <img src="./images/carrusel2.jpg" alt="Hero 1">
-      <div class="hero-content">
-        <h2>Realzá tu belleza con tratamientos premium</h2>
-        <p>Experiencia única en Martínez con resultados visibles desde la primera sesión</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#servicios">Ver servicios</a>
-          <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-slider">
+      <div class="slide active">
+        <img src="./images/carrusel2.jpg" alt="Hero 1">
+        <div class="hero-content">
+          <h2>Realzá tu belleza con tratamientos premium</h2>
+          <p>Experiencia única en Martínez con resultados visibles desde la primera sesión</p>
+          <div class="hero-buttons">
+            <a class="btn" href="#servicios">Ver servicios</a>
+            <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide left">
+        <img src="./images/carrusel5.jpg" alt="Hero 2">
+        <div class="hero-content">
+          <h2>Cuidamos tu piel con los mejores tratamientos</h2>
+          <p>Resultados visibles desde la primera sesión</p>
+          <div class="hero-buttons">
+            <a class="btn" href="#servicios">Ver servicios</a>
+            <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="./images/carrusel3.jpg" alt="Hero 3">
+        <div class="hero-content">
+          <h2>Tratamientos corporales y faciales de alta calidad</h2>
+          <p>Tu bienestar y belleza en un solo lugar</p>
+          <div class="hero-buttons">
+            <a class="btn" href="#servicios">Ver servicios</a>
+            <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="slide left">
-      <img src="./images/carrusel5.jpg" alt="Hero 2">
-      <div class="hero-content">
-        <h2>Cuidamos tu piel con los mejores tratamientos</h2>
-        <p>Resultados visibles desde la primera sesión</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#servicios">Ver servicios</a>
-          <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <h3>Servicios destacados</h3>
+    <div class="cards">
+
+      <div class="card accordion">
+        <h4 class="accordion-header">FACIAL</h4>
+        <div class="accordion-content">
+          <ul class="caja-acordeon">
+            <h5> <a href="./PAGES/facial.html">Rejuvenecimiento & glow facial</a></h5>
+            <li>Limpieza profunda</li>
+            <li>Punta de diamante</li>
+            <li>HIFU facial</li>
+            <li>Piel más luminosa, firme y revitalizada</li>
+
+          </ul>
         </div>
       </div>
-    </div>
 
-    <div class="slide">
-      <img src="./images/carrusel3.jpg" alt="Hero 3">
-      <div class="hero-content">
-        <h2>Tratamientos corporales y faciales de alta calidad</h2>
-        <p>Tu bienestar y belleza en un solo lugar</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#servicios">Ver servicios</a>
-          <a class="btn-outline" href="https://wa.me/541165779952">Reservar turno</a>
+      <div class="card accordion">
+        <h4 class="accordion-header">CORPORALES</h4>
+        <div class="accordion-content">
+          <p>
+          <ul class="caja-acordeon">
+
+           <h5> Body sculpt & redefinición </h5> 
+            <li>
+               HIFU corporal
+            </li>
+            <li>
+               Liposonix
+            </li>
+            <li>
+               Ultracavitación
+            </li>
+            <li>
+               Presoterapia
+            </li>
+            <li>
+               Tratamientos reafirmantes y anticelulitis
+            </li>
+            <li>
+              Reducción de medidas y mejora visible de la piel
+            </li>
+          </ul>
+
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="services">
-  <h3>Servicios destacados</h3>
-  <div class="cards">
-
-    <div class="card accordion">
-      <h4 class="accordion-header">Faciales</h4>
-      <div class="accordion-content">
-        <p>Limpieza profunda, hidratación y rejuvenecimiento facial personalizado.</p>
+      <div class="card accordion">
+        <h4 class="accordion-header">MASAJES</h4>
+        <div class="accordion-content">
+          
+          <ul class="caja-acordeon" >
+            <h5><a href="./PAGES/masajes.html">Bienestar & armonía corporal</a></h5>
+            <li>Relajantes y descontracturantes</li>
+            <li>Reductores</li>
+            <li>Piedras calientes</li>
+            <li>Drenaje linfático</li>
+            <p>Liberación de tensiones y equilibrio corporal</p>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="card accordion">
-      <h4 class="accordion-header">Corporales</h4>
-      <div class="accordion-content">
-        <p>Tratamientos reductores, reafirmantes y anti celulitis.</p>
+      <div class="card accordion">
+        <h4 class="accordion-header">DEPILACIÓN DEFINITIVA</h4>
+        <div class="accordion-content">
+          <ul class="caja-acordeon">
+            <h5><a href="./PAGES/depilacion.html">Piel suave todo el año</a></h5>
+            <li>Láser facial y corporal</li>
+            <li>El laser Soprhano ice</li>
+            
+            <p>Resultados progresivos, piel más suave y uniforme</p>
+
+          </ul>
+        </div>
       </div>
+
     </div>
-
-    <div class="card accordion">
-      <h4 class="accordion-header">Masajes</h4>
-      <div class="accordion-content">
-        <p>Relajantes, descontracturantes y terapéuticos para tu bienestar.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section class="results-about-container">
+  </section>
 
   <!-- RESULTADOS -->
-  <section id="resultados" class="results">
-    <h3>Resultados visibles</h3>
-    <div class="gallery">
-      <img src="./images/antes-despues1.jpeg" alt="Resultado facial">
-      <img src="./images/antes-despues2.jpeg" alt="Tratamiento corporal">
-      <img src="./images/antes-despues3.jpeg" alt="Masaje relajante">
+  <section class="results-about-container">
+
+    <!-- RESULTADOS -->
+    <section id="resultados" class="results">
+      <h3>Resultados visibles</h3>
+      <div class="gallery">
+        <img src="./images/antes-despues1.jpeg" alt="Resultado facial">
+        <img src="./images/antes-despues2.jpeg" alt="Tratamiento corporal">
+        <img src="./images/antes-despues3.jpeg" alt="Masaje relajante">
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="about">
+      <h3>Sobre Nosotros</h3>
+      <p>En Gladys Giordano Estética trabajamos con técnicas modernas y atención personalizada, logrando resultados
+        visibles desde la primera sesión. Nuestro objetivo es que cada cliente se sienta único y cuidado.</p>
+    </section>
+
+  </section>
+
+
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h3>Reservá tu turno hoy mismo</h3>
+    <a class="btn" href="https://wa.me/541165779952">Agendar ahora</a>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <h3>Ubicacion</h3>
+
+    <iframe src="https://www.google.com/maps?q=Albarellos+2184+Martinez&output=embed"></iframe>
+  </section>
+
+  <!-- MÉTRICAS -->
+  <section class="stats">
+    <div class="stat">
+      <h4>+500</h4>
+      <p>Clientes satisfechos</p>
+    </div>
+    <div class="stat">
+      <h4>+35</h4>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="stat">
+      <h4>100%</h4>
+      <p>Satisfacción garantizada</p>
     </div>
   </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section id="nosotros" class="about">
-    <h3>Sobre Nosotros</h3>
-    <p>En Gladys Giordano Estética trabajamos con técnicas modernas y atención personalizada, logrando resultados visibles desde la primera sesión. Nuestro objetivo es que cada cliente se sienta único y cuidado.</p>
-  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>WebStudio-Digital|FBS</p>
+    <p>© 2026 Gladys Giordano Estética</p>
+  </footer>
 
-</section>
+  <!-- WHATSAPP -->
+  <a class="whatsapp" href="https://wa.me/541165779952"><img class="logo-whatsapp" src="./images/logo-whatsapp.jpg"
+      alt="whatsapp"></a>
 
+  <button id="btnTop">↑</button>
 
-
-<!-- CTA FINAL -->
-<section class="cta">
-  <h3>Reservá tu turno hoy mismo</h3>
-  <a class="btn" href="https://wa.me/541165779952">Agendar ahora</a>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" class="contact">
-  <h3>Ubicacion</h3>
-  
-  <iframe src="https://www.google.com/maps?q=Albarellos+2184+Martinez&output=embed"></iframe>
-</section>
-
-<!-- MÉTRICAS -->
-<section class="stats">
-  <div class="stat">
-    <h4>+500</h4>
-    <p>Clientes satisfechos</p>
-  </div>
-  <div class="stat">
-    <h4>+35</h4>
-    <p>Años de experiencia</p>
-  </div>
-  <div class="stat">
-    <h4>100%</h4>
-    <p>Satisfacción garantizada</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>WebStudio-Digital|FBS</p>
-  <p>© 2026 Gladys Giordano Estética</p>
-</footer>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/541165779952"><img class="logo-whatsapp" src="./images/logo-whatsapp.jpg" alt="whatsapp"></a>
-
-<button id="btnTop">↑</button>
-
-<script src="./js/scrip.js" defer></script>
+  <script src="./js/scrip.js" defer></script>
 </body>
+
 </html>

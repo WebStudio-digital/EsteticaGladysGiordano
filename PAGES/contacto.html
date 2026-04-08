@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Centro de estética en Martínez. Tratamientos faciales, corporales y masajes con resultados visibles desde la primera sesión.">
+  <title>Gladys Giordano Estética</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/studio.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+  <h1> Estetica | Gladys Giordano</h1>
+
+  <!-- Botón hamburguesa -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <div class="container">
+    <nav id="nav-menu">
+
+      <!-- Dropdown Servicios -->
+      <div class="dropdown">
+        <a href="../index.html" class="dropbtn dropdown">HOME</a>
+        <div class="dropdown-content">
+          <a href="./facial.html">Facial</a>
+          <a href="./corporales.html">Corporales</a>
+          <a href="./depilacion.html">Definitiva</a>
+          <a href="./masajes.html">Masajes</a>
+        </div>
+      </div>
+
+      <a href="#resultados">Resultados</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#">Contacto</a>
+
+    </nav>
+  </div>
+</header>
+
+ <!-- FORMULARIO -->
+    <section class="contacto-form">
+        <h3>Formulario de Contacto</h3>
+        <form action="mailto:tuemail@correo.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Tu email">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje"></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- MÉTRICAS -->
+  <section class="stats">
+    <div class="stat">
+      <h4>+500</h4>
+      <p>Clientes satisfechos</p>
+    </div>
+    <div class="stat">
+      <h4>+35</h4>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="stat">
+      <h4>100%</h4>
+      <p>Satisfacción garantizada</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>WebStudio-Digital|FBS</p>
+    <p>© 2026 Gladys Giordano Estética</p>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a class="whatsapp" href="https://wa.me/541165779952"><img class="logo-whatsapp" src="../images/logo-whatsapp.jpg"
+      alt="whatsapp"></a>
+
+  <button id="btnTop">↑</button>
+
+  <script src="./js/scrip.js" defer></script>
+</body>
+
+</html>
