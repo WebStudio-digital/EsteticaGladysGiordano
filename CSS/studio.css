@@ -861,6 +861,57 @@ h5 {
   color: #aaa;
   font-size: 13px;
 }
+/* =========================
+   PÁGINA DE GRACIAS
+========================= */
+
+.gracias {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--color-gris);
+  padding: 20px;
+}
+
+.gracias-box {
+  background: var(--color-blanco);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 0.8s ease;
+}
+
+.gracias h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-dorado);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.gracias p {
+  font-size: 16px;
+  color: var(--color-texto);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.gracias .btn {
+  display: inline-block;
+  text-decoration: none;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.gracias-box {
+  animation: fadeIn 0.8s ease, float 3s ease-in-out infinite;
+}
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
@@ -926,7 +977,7 @@ h5 {
     top: 70px;
     right: 20px;
     background: white;
-    width: 200px;
+    width: 180px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -939,6 +990,8 @@ h5 {
 
   .hamburger {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
   }
 
   nav {
@@ -1009,11 +1062,38 @@ h5 {
 
   }
   .caja-acordeon {
-    font-size: 16px;
+    font-size: 16p
+    x;
     line-height: 1.2;
     padding: 0 16px;
   }
-  .header h1 {
+  
+  .gracias {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .gracias-box {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .gracias h1 {
+    font-size: 22px !important;
+  }
+
+  .gracias p {
+    font-size: 14px;
+  }
+
+  .gracias .btn {
+    width: 100%;
+  }
+.header h1 {
     font-size: 1.2rem !important;
   }
   

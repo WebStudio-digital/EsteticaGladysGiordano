@@ -32,16 +32,10 @@
       <!-- Dropdown Servicios -->
       <div class="dropdown">
         <a href="../index.html" class="dropbtn dropdown">HOME</a>
-        <div class="dropdown-content">
-          <a href="./facial.html">Facial</a>
-          <a href="./corporales.html">Corporales</a>
-          <a href="./depilacion.html">Definitiva</a>
-          <a href="./masajes.html">Masajes</a>
-        </div>
       </div>
 
-      <a href="#resultados">Resultados</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="../index.html#resultados">Resultados</a>
+      <a href="../index.html#nosotros">Nosotros</a>
       <a href="#">Contacto</a>
 
     </nav>
@@ -50,23 +44,26 @@
 
  <!-- FORMULARIO -->
     <section class="contacto-form">
-        <h3>Formulario de Contacto</h3>
-        <form action="mailto:tuemail@correo.com" method="POST" enctype="text/plain">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+  <h3>Formulario de Contacto</h3>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required placeholder="Tu email">
+  
+    
+    <form id="contactForm">
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+  <input type="text" name="nombre" placeholder="Nombre" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje"></textarea>
+  <input type="email" name="email" placeholder="Email" required>
 
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
+  <input type="tel" name="telefono" placeholder="Teléfono">
+
+  <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+  <button type="submit" class="btn">Enviar</button>
+
+</form>
+
+  </form>
+</section>
 
     <!-- MÉTRICAS -->
   <section class="stats">
@@ -90,9 +87,6 @@
     <p>© 2026 Gladys Giordano Estética</p>
   </footer>
 
-  <!-- WHATSAPP -->
-  <a class="whatsapp" href="https://wa.me/541165779952"><img class="logo-whatsapp" src="../images/logo-whatsapp.jpg"
-      alt="whatsapp"></a>
 
   <button id="btnTop">↑</button>
 

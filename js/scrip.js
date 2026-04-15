@@ -55,3 +55,28 @@ btnTop.addEventListener("click", () => {
   });
 });
 
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/maqaqokw", {
+      method: "POST",
+      body: data,
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      window.location.href = "./gracias.html";
+    } else {
+      alert("Error al enviar");
+    }
+  });
+}
