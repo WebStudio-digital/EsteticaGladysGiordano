@@ -941,6 +941,16 @@ h5 {
     background-position: center;
     background-size: cover;
   }
+  .hero-corporales {
+    height: 70vh;
+    /* menos alto en celular */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
 
   /* IMÁGENES GENERALES */
   img {
